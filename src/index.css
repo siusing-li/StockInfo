@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #007bff;
+  color: #fff;
+}
+
+.navBar h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.stockTextInput {
+  padding: 10px;
+  margin: 20px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 300px;
+}
+
+.stockTextInput input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stockSubmitButton {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.stockData {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.stockSymbol {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.stockOpen,
+.stockHigh,
+.stockLow,
+.stockPrice,
+.stockVolume{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.stockHigh {
+  color: #00A693;
+}
+.stockLow {
+  color: #ff0000;
+}
+.stockPrice {
+  color: #007bff;
+}
+
+.stockChangePercent {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .App {
+    font-size: 14px;
+  }
+
+  .navBar h1 {
+    font-size: 24px;
+  }
+
+  .stockTextInput {
+    width: 200px;
+  }
+
+  .stockData {
+    width: 100%;
+  }
+}
